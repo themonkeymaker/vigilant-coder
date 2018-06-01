@@ -2,7 +2,7 @@
     
   function shuffle (array) {
   let currentIndex = array.length, temporaryValue, randomIndex
-
+  
   while (currentIndex !== 0) {
     randomIndex = Math.floor(Math.random() * currentIndex)
     currentIndex -= 1
@@ -19,13 +19,40 @@
   var second;
   var match = 0;
 
-var cards = [];
-cards[0] = 'https://cdn4.iconfinder.com/data/icons/poker-cards/512/card_queenclub-512.png';
-cards[1] = 'https://cdn4.iconfinder.com/data/icons/poker-cards/512/card_kingheart_kopia-512.png';
-cards[2] = '';
-cards[3] = '';
-cards[4] = '';
-cards[5] = '';
+  var cards = [
+    {
+      card: 'queen',
+      cardImage: 'images/queen-of-hearts.png'
+    },
+    {
+      card: 'queen',
+      cardImage: 'images/queen-of-diamonds.png'
+    },
+    {
+      card: 'king',
+      cardImage: 'images/king-of-hearts.png'
+    },
+    {
+      card: 'king',
+      cardImage: 'images/king-of-diamonds.png'
+    }
+    {
+      card: 'queen',
+      cardImage: 'images/queen-of-hearts.png'
+    },
+    {
+      card: 'queen',
+      cardImage: 'images/queen-of-diamonds.png'
+    },
+    {
+      card: 'king',
+      cardImage: 'images/king-of-hearts.png'
+    },
+    {
+      card: 'king',
+      cardImage: 'images/king-of-diamonds.png'
+    }
+  ];
 
 function shuffle(array)
 {
